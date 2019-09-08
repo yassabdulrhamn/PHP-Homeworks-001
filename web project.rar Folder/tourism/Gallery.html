@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="Stylesheets/styles-menu.css">
+   <link rel="stylesheet" href="Stylesheets/Style.css">
+   <!-- SlideShow OLD
+   <link rel="stylesheet" href="Stylesheets/slideshow.css">
+   
+   <script type="text/javascript" src="JavaScript/jquery.js"></script>
+    -->
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <script src="Slideshow.js"></script>
+   <script type="text/javascript" src="JavaScript/cssrefresh.js"></script>
+ 
+   
+   <!-- SlideShow CSS -->
+        <link rel="stylesheet" type="text/css" href="Stylesheets/style-slideshow.css">
+        <link rel="stylesheet" type="text/css" href="Stylesheets/jcarousel.connected-carousels.css">
+        <!-- SlideShow JavaScript -->
+ <script type="text/javascript" src="JavaScript/jquery.jcarousel.min.js"></script>
+ <script type="text/javascript" src="JavaScript/jcarousel.connected-carousels.js"></script>
+        
+        <title>Gallery</title>
+</head>
+<body>
+    <div id='cssmenu'>
+<ul>
+   <li ><a href='index.html'>Home</a></li>
+   <li class='active'><a href='Gallery.html'>Gallery</a></li>
+   <li><a href='Booking.html'>Booking</a></li>
+   <li><a href='contactus.html'>Contact us</a></li>
+   <li><a href='Aboutus.html'>About us</a></li>
+   <li><a href='result.php'>Admin</a></li>
+</ul>
+</div>
+       <header>
+        <h1>Gallery</h1>
+    </header>
+
+    <div id="header" class="header">
+      <h1>Welcome</h1>
+        
+        
+<div id="Conteries">
+<h3 id="contrie-name">Hover on a flag</h3>
+ <ul id="Menu-Flags">
+  <li>
+  <img src="Data/Countries/Flags/USA.png" alt="USA" width="50" onClick="ShowCountry('USA')" onMouseOut="ShowName('Out')" onMouseOver="ShowName('United States')"/>
+  </li>
+  <li>
+  <img src="Data/Countries/Flags/KWT.png" alt="KWT" width="50" onClick="ShowCountry('KWT')" onMouseOut="ShowName('Out')" onMouseOver="ShowName('Kuwait')"/>
+  </li>
+  <li>
+  <img src="Data/Countries/Flags/FRA.png" alt="FRA" width="50" onClick="ShowCountry('FRA')" onMouseOut="ShowName('Out')" onMouseOver="ShowName('France')"/>
+  </li>
+  <li>
+  <img src="Data/Countries/Flags/JPN.png" alt="JPN" width="50" onClick="ShowCountry('JPN')" onMouseOut="ShowName('Out')" onMouseOver="ShowName('Japan')"/>
+  </li>
+  <li>
+  <img src="Data/Countries/Flags/ESP.png" alt="ESP" width="50" onClick="ShowCountry('ESP')" onMouseOut="ShowName('Out')" onMouseOver="ShowName('Spain')"/>
+  </li>
+</ul> 
+<br>
+<div class="wrapper">
+            <div class="connected-carousels">
+                <div class="stage">
+                    <div class="carousel carousel-stage">
+                        <ul id="SlideShow">  
+                        <li><img id="Simage1" src="Data/Countries/KWT/1.jpg" width="600" height="400" alt=""></li>   
+                        <li><img id="Simage2" src="Data/Countries/KWT/2.jpg" width="600" height="400" alt=""></li>   
+                        <li><img id="Simage3" src="Data/Countries/KWT/3.jpg" width="600" height="400" alt=""></li>   
+                        <li><img id="Simage4" src="Data/Countries/KWT/4.jpg" width="600" height="400" alt=""></li>   
+                        <li><img id="Simage5" src="Data/Countries/KWT/5.jpg" width="600" height="400" alt=""></li>   
+                        </ul>
+                    </div>
+                    <p class="photo-credits">
+                        
+                    </p>
+                    <a href="#" class="prev prev-stage"><span>&lsaquo;</span></a>
+                    <a href="#" class="next next-stage"><span>&rsaquo;</span></a>
+                </div>
+
+                <div class="navigation">
+                    <a href="#" class="prev prev-navigation">&lsaquo;</a>
+                    <a href="#" class="next next-navigation">&rsaquo;</a>
+                    <div class="carousel carousel-navigation">
+                        <ul id="SlideShow_thumbnails">
+                        <li><img id="Timage1" onClick="GetPlaceInfo(0)"src="Data/Countries/KWT/1.jpg" width="50" height="50" alt=""></li>
+                        <li><img id="Timage2" onClick="GetPlaceInfo(1)" src="Data/Countries/KWT/2.jpg" width="50" height="50" alt=""></li>
+                        <li><img id="Timage3" onClick="GetPlaceInfo(2)" src="Data/Countries/KWT/3.jpg" width="50" height="50" alt=""></li>
+                        <li><img id="Timage4" onClick="GetPlaceInfo(3)" src="Data/Countries/KWT/4.jpg" width="50" height="50" alt=""></li>
+                        <li><img id="Timage5" onClick="GetPlaceInfo(4)" src="Data/Countries/KWT/5.jpg" width="50" height="50" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <p id="SlideShow_pacename"></p>
+                <p id="SlideShow_info">
+                
+                </p>
+                On the map:<br>
+                <img id="map" src="" alt="NoMap" />
+            </div>
+            </div>
+
+</div>
+    <div id="footer" class="footer">
+      <p>All copyright &#169; goes to <b>Alaa & Hanan</b></p>
+	  <a href="tel:4566487">Call 456-6487</a>
+    </div>
+    </div>
+</body>
+<script src="JavaScript/Switch-contrie.js"></script>
+</html>
+
+
+
+
